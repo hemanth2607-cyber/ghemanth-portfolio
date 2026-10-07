@@ -1,6 +1,9 @@
 # Hemanth Gopalsamy | Software Engineer — Portfolio
 
-Portfolio website for **Hemanth Gopalsamy** (@hemanth2607-cyber) — *Software Engineer & Full-Stack Architect*, Founder of **Aerolette**, building fast, provable, offline-first systems.
+Portfolio website for **Hemanth Gopalsamy** ([@hemanth2607-cyber](https://github.com/hemanth2607-cyber)) — *Software Engineer & Full-Stack Architect*, Founder of **Aerolette**, building fast, provable, offline-first systems.
+
+🔗 **Live Website**: [https://hemanth2607-cyber.github.io/ghemanth-portfolio/](https://hemanth2607-cyber.github.io/ghemanth-portfolio/)  
+📦 **GitHub Repository**: [https://github.com/hemanth2607-cyber/ghemanth-portfolio](https://github.com/hemanth2607-cyber/ghemanth-portfolio)
 
 ## ✨ Highlights & Architecture
 
