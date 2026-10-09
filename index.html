@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hemanth Gopalsamy | Software Engineer &amp; Full-Stack Architect</title>
-<meta name="description" content="Portfolio of Hemanth Gopalsamy - Software Engineer building fast, provable, offline-first systems, founder of Aerolette, and architect of SuperFlow.">
+<meta name="description" content="Portfolio of Hemanth Gopalsamy - Software Engineer building fast, provable, offline-first systems, and founder of Aerolette.">
 <meta name="author" content="Hemanth Gopalsamy">
 <link rel="icon" type="image/jpeg" href="assets/avatar.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -328,6 +328,18 @@ h2{
 }
 .fr svg{width:100%;height:100%;display:block}
 
+.card-photo, .card-video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top center;
+  display:block;
+  border:0;
+  outline:none;
+  transition:transform .6s cubic-bezier(.16,1,.3,1);
+}
+.pic:hover .card-photo, .pic:hover .card-video{transform:scale(1.04)}
+
 /* Dedicated Portrait Frame for About Section (FULLY VISIBLE PHOTO) */
 .about-grid{
   display:grid;
@@ -342,14 +354,8 @@ h2{
   box-shadow:inset 0 0 30px rgba(0,0,0,.9),inset 0 0 0 1px rgba(255,255,255,.15);
 }
 .profile-card .card-photo{
-  width:100%;
-  height:100%;
-  object-fit:cover;
   object-position:center 12%;
-  display:block;
-  transition:transform .6s cubic-bezier(.16,1,.3,1);
 }
-.pic:hover .card-photo{transform:scale(1.03)}
 
 figcaption{padding:20px 14px 12px;flex:1;display:flex;flex-direction:column}
 figcaption small{
@@ -750,46 +756,18 @@ footer{
       <a href="assets/NexHack_Certificate_G_Hemanth.pdf" target="_blank" rel="noopener noreferrer" class="cred-link">View Certificate (PDF) ↗</a>
     </div>
 
-    <!-- Course Completion: Data Structures -->
-    <div class="cred-card">
-      <div class="cred-header">
-        <div class="cred-icon-box">🧠</div>
-        <div>
-          <span class="cred-type">Course Completion</span>
-          <h3 class="cred-title">Data Structures &amp; Algorithms</h3>
-        </div>
-      </div>
-      <div class="cred-issuer">V.S.B. Engineering College</div>
-      <p class="cred-desc">Comprehensive mastery of advanced trees, graphs, sorting heuristics, dynamic programming, and computational complexity analysis.</p>
-      <span class="cred-link">Course Credential Completed</span>
-    </div>
-
-    <!-- Course Completion: Big Data -->
+    <!-- Coursework: Big Data (NPTEL) -->
     <div class="cred-card">
       <div class="cred-header">
         <div class="cred-icon-box">🌐</div>
         <div>
-          <span class="cred-type">Course Completion</span>
+          <span class="cred-type">NPTEL Coursework // In Progress</span>
           <h3 class="cred-title">Big Data Computing</h3>
         </div>
       </div>
-      <div class="cred-issuer">NPTEL / AI &amp; ML Department</div>
-      <p class="cred-desc">Large-scale distributed systems, batch &amp; stream processing paradigms, MapReduce concepts, and distributed storage.</p>
-      <span class="cred-link">In Progress / Completing</span>
-    </div>
-
-    <!-- Academic Quiz Honors -->
-    <div class="cred-card">
-      <div class="cred-header">
-        <div class="cred-icon-box">📐</div>
-        <div>
-          <span class="cred-type">Academic Honor</span>
-          <h3 class="cred-title">Mathematics &amp; Logic</h3>
-        </div>
-      </div>
-      <div class="cred-issuer">VSB Mathematics Association</div>
-      <p class="cred-desc">Recognized for high analytical problem-solving and mathematical aptitude in discrete structures and linear algebra.</p>
-      <span class="cred-link">Verified Honor</span>
+      <div class="cred-issuer">NPTEL / Swayam (IIT)</div>
+      <p class="cred-desc">Pursuing comprehensive coursework in distributed architectures, MapReduce paradigms, Hadoop/Spark frameworks, and big data streaming computation.</p>
+      <span class="cred-link">Currently Pursuing ↗</span>
     </div>
 
     <!-- Extensible Slot Card for user to add more -->
@@ -814,7 +792,7 @@ footer{
       <figcaption>
         <small>Software Engineer &amp; Architect</small>
         <h3>Hemanth Gopalsamy</h3>
-        <p>Karur, Tamil Nadu • B.E. CSE (AI &amp; ML) at V.S.B. Engineering College. Leading technical operations, software infrastructure, and branding at Aerolette, while architecting SuperFlow and building resilient distributed web tools.</p>
+        <p>Karur, Tamil Nadu • B.E. CSE (AI &amp; ML) at V.S.B. Engineering College. Leading technical operations, software infrastructure, and branding at Aerolette, while building resilient distributed systems and offline-first web tools.</p>
         <div class="lk">
           <a href="assets/G_Hemanth_Resume.pdf" target="_blank" rel="noopener noreferrer">resume (pdf) ↗</a>
           <a href="https://github.com/hemanth2607-cyber" target="_blank" rel="noopener noreferrer">github ↗</a>
@@ -908,7 +886,6 @@ function ridge(sd,y,a,c){var r=R(sd),d='M0 220V'+y,i;for(i=0;i<=20;i++)d+='L'+i*
 function N(x,y,c){return '<rect x="'+(x-14)+'" y="'+(y-8)+'" width="28" height="16" rx="4" class="f0 '+(c||'sa')+'"/>'}
 
 var O={
-superflow:'<path class="sa dsh" d="M60 110H140V60H220V110H300V160H220V110"/><circle cx="60" cy="110" r="14" class="f0 sa"/><circle cx="140" cy="60" r="14" class="f0 sb"/><circle cx="220" cy="110" r="18" class="f0 sa"/><circle cx="300" cy="160" r="14" class="f0 sb"/><path class="sb" d="M140 60L220 110L300 160"/>',
 merkle:'<path class="sa dsh" d="M200 42V52H130V62M200 52H270V62M130 78V88H100V98M130 88H160V98M270 78V88H240V98M270 88H300V98"/>'+N(200,34)+N(130,70,'sb')+N(270,70,'sb')+[100,160,240,300].map(function(x){return N(x,106)}).join(''),
 bars:[70,120,170,220,270].map(function(x,i){return '<rect class="bar '+(i%2?'fb':'fa')+'" x="'+x+'" y="'+(30+i*7%30)+'" width="26" height="'+(90-i*7%30)+'" rx="4" style="animation-delay:-'+i*.6+'s;fill-opacity:.85"/>'}).join(''),
 wave:'<path class="sa wv" stroke-linecap="round" d="M20 80L80 80L100 40L125 118L150 60L175 80L225 80L245 30L270 120L300 70L330 80L380 80"/>',
@@ -927,7 +904,19 @@ function scene(sd,k){
 function fig(o,sd){
   var f=document.createElement('figure');
   f.className='pic rv';
-  var visual = o.img ? '<div class="fr img-fr"><img src="'+o.img+'" alt="'+o.t+'" class="card-photo"></div>' : '<div class="fr">'+scene(sd,o.art)+'</div>';
+  var visual;
+  if(o.video){
+    visual = '<div class="fr img-fr">' +
+      '<video autoplay loop muted playsinline disableRemotePlayback class="card-video" preload="auto">' +
+        '<source src="'+o.video+'" type="video/mp4">' +
+        (o.img ? '<img src="'+o.img+'" alt="'+o.t+'" class="card-photo" loading="lazy">' : '') +
+      '</video>' +
+    '</div>';
+  } else if(o.img){
+    visual = '<div class="fr img-fr"><img src="'+o.img+'" alt="'+o.t+'" class="card-photo" loading="lazy"></div>';
+  } else {
+    visual = '<div class="fr">'+scene(sd,o.art)+'</div>';
+  }
   f.innerHTML=visual+'<figcaption>'+(o.k?'<small>'+o.k+'</small>':'')+'<h3>'+o.t+'</h3><p>'+o.p+'</p>'+(o.tags?'<div class="tg">'+o.tags.map(function(t){return '<span>'+t+'</span>'}).join('')+'</div>':'')+(o.l?'<div class="lk">'+o.l.map(function(l){return '<a href="'+l[1]+'"'+(l[1].endsWith('.pdf')||l[1].startsWith('http')?' target="_blank" rel="noopener noreferrer"':'')+'>'+l[0]+' ↗</a>'}).join('')+'</div>':'')+'</figcaption>';
   return f
 }
@@ -937,15 +926,8 @@ var G='https://github.com/hemanth2607-cyber/';
 // PROJECT ACCOMPLISHMENTS (ALL CARDS UNIFORM SAME SIZE)
 [
   {
-    art:'superflow',
-    k:'Frontier AI Orchestration',
-    t:'SuperFlow AI Orchestrator',
-    p:'An autonomous multi-model agent orchestrator featuring isolated execution runtimes, dynamic SEO metadata pipelines, rapid project scaffolding, and zero-exposure credential handling.',
-    tags:['Autonomous Agents','Next.js','Docker','FastAPI','System Architecture'],
-    l:[['source',G+'superflow']]
-  },
-  {
-    art:'merkle',
+    video:'assets/dogfood-demo.mp4',
+    img:'assets/dogfood-demo.webp',
     k:'Hackathon Project // Results Awaited',
     t:'DOGFOOD Judging Platform',
     p:'Engineered an evaluation platform for hackathons as part of the DOGFOOD 2026 hackathon (results awaited). Employs Bayesian Z-score modeling against judge bias, cryptographic SHA-256 Merkle chain audit trails, and sub-7ms query latency via SQLite WAL.',
@@ -953,7 +935,8 @@ var G='https://github.com/hemanth2607-cyber/';
     l:[['live','https://dog-food-hack.vercel.app/'],['source',G+'DogFoodHack']]
   },
   {
-    art:'bars',
+    video:'assets/student-monitoring-demo.mp4',
+    img:'assets/student-monitoring-demo.webp',
     k:'Academic Telemetry',
     t:'Student Monitoring System',
     p:'Department-scale tracking platform for CSE (AI & ML) automating departmental workflows, attendance anomaly logging, and interactive telemetry dashboards.',
@@ -961,7 +944,8 @@ var G='https://github.com/hemanth2607-cyber/';
     l:[['live','https://cse-aiml-student-monitoring.vercel.app'],['source',G+'student-monitoring-system']]
   },
   {
-    art:'wave',
+    video:'assets/log-lens-demo.mp4',
+    img:'assets/log-lens-demo.webp',
     k:'Observability Engine',
     t:'Log Lens',
     p:'Parses application error traces at scale, groups failure signatures into semantic categories, and surfaces root causes to accelerate incident remediation.',
@@ -969,7 +953,8 @@ var G='https://github.com/hemanth2607-cyber/';
     l:[['live','https://log-lens-phi.vercel.app/'],['source',G+'log_lens']]
   },
   {
-    art:'path',
+    video:'assets/topic-guide-demo.mp4',
+    img:'assets/topic-guide-demo.webp',
     k:'Roadmap Synthesis',
     t:'Topic Learning Guide',
     p:'Transforms any technical domain or syllabus into a progressive, milestone-driven mastery roadmap, with each step linked to verified primary documentation.',
@@ -1043,16 +1028,18 @@ function tick(t){
 }
 requestAnimationFrame(tick);
 
-// Smooth scroll reveal observer
+// Smooth scroll reveal observer & hardware-accelerated video playback
 var io=new IntersectionObserver(function(es){
   es.forEach(function(e){
     if(e.isIntersecting){
       e.target.classList.add('in');
-      io.unobserve(e.target);
+      var vid=e.target.querySelector('video');
+      if(vid){ vid.play().catch(function(){}); }
     }
   });
-},{threshold:.1});
+},{threshold:.05});
 document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+document.querySelectorAll('video').forEach(function(v){v.play().catch(function(){})});
 })();
 </script>
 </body>
